@@ -75,7 +75,7 @@ const playMusic = (track, pause = "false") => {
     currentSong.src = `/${currentfolder}/` + track;
     if (!pause) {
         currentSong.play();
-        playImg.src = "pause.svg";
+        playImg.src = "svg/pause.svg";
     }
     document.querySelector(".songtitle").innerHTML = decodeURI(track);
 
@@ -104,12 +104,12 @@ async function play() {
     playLogo.addEventListener("click", () => {
         if (currentSong.paused) {
             currentSong.play();
-            playImg.src = "pause.svg";
+            playImg.src = "svg/pause.svg";
 
         }
         else {
             currentSong.pause();
-            playImg.src = "play.svg";
+            playImg.src = "svg/play.svg";
         }
     })
     prev.addEventListener("click", () => {
@@ -160,12 +160,12 @@ async function play() {
         if (event.code === 'Space' || event.key === ' ') {
             if (currentSong.paused) {
                 currentSong.play();
-                playImg.src = "pause.svg";
+                playImg.src = "svg/pause.svg";
 
             }
             else {
                 currentSong.pause();
-                playImg.src = "play.svg";
+                playImg.src = "svg/play.svg";
             }
 
         }
