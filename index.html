@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify_basic</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+
+
+    <div class="container flex bg-black">
+
+        <div class="left  ">
+            <div class="home  bg-grey margin-1 padding-1 rounded">
+                <div class="flex" style="justify-content:space-between;">
+                <div class="flex" style="gap:10px">
+                    <img src="index.svg" class="invert" width="25px" alt="spotify.img">
+                <div style="font-size: 23px; font-family:'Franie','CS Margiela', 'Golane', 'Montserrat', Arial, sans-serif;">Spotify</div>
+                </div>
+                <img class="exit invert" src="exit.svg">
+                </div>
+                <ul>
+                    <li class="flex"><img src="home.svg" class="invert" alt="home.img">
+                        HOME
+                    </li>
+                    <li >
+                        <div class="searchbar flex">
+                        <img src="search.svg" class="invert" alt="search.img">
+                       <input type="text" id="searchInput" placeholder="Search names...">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="library bg-grey margin-1 padding-1 rounded">
+                <div class="heading flex ">
+                    <div class="library1 flex">
+                        <img src="library.svg" class="invert" width="20px" alt="lib.img">
+                        <h4>Your library</h4>
+
+                    </div>
+
+
+                    <img src="plus.svg" class="plus invert" width="20px" alt="plus.img">
+                </div>
+                <div class="songblock margin-1 bg-black rounded">
+                    <div class="songheading padding-1 bg-grey ">
+                        <h3>Playlist Tracks</h3>
+                    </div>
+                    <div class="songlist rounded ">
+                        <ul id="list">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="premium ">
+                    <img src="index.svg" class="invert" width="39px" alt="spotify.img">
+                    <div><b>Upgrade to Premium</b></div>
+
+                </div>
+
+                <div class="footer flex">
+
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/" data-encore-id="textLink" id="">
+                            <span data-encore-id="type">Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/" data-encore-id="textLink" id="">
+                            <span data-encore-id="type">Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/" data-encore-id="textLink" id="">
+                            <span data-encore-id="type">Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/" data-encore-id="textLink" id="">
+                            <span data-encore-id="type">Accessibility</span>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="right bg-black  padding-1 ">
+            <div class="header flex  ">
+                <div class="nav invert">
+                    <img class ="hamburger" src="hamburger.svg">
+                    <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                    </svg>
+                    </div>
+                </div>
+                <div class="button invert">
+                    <button class="loginbtn"
+                        style="height:40px;width:80px;border-radius:20px;font-size:18px;border:none;"><b>Sign
+                            Up</b></button>
+                    <button class="signbtn"
+                        style="height:40px;width:80px;border-radius:20px;font-size:18px;"><b>Login</b></button>
+                </div>
+            </div>
+            <div class="spotifyplaylist">
+                <div class="playlistlogo flex">
+                    <img src="index.svg" class="invert" width="40px" alt="spotify.img">
+                    <h1><b>Spotify Playlist</b></h1>
+                </div>
+                <div class="maincontainer">
+                    <div class="cardContainer flex">
+
+                        <div data-folder="high" class="card">
+                            <img src="party.jpg" alt="a.png">
+                            <h2 style="font-family: 'Verdana', 'Geneva', Tahoma, sans-serif;">
+                                <b>Party Anthems</b>
+                            </h2>
+                            <p>
+                               Feel-good beats for unforgettable nights
+                            </p>
+                        </div>
+                        <div data-folder="haryana" class="card">
+                            <img src="haryanvi.jpg" alt="a.png">
+                            <h2 style="font-family: 'Verdana', 'Geneva', Tahoma, sans-serif;">
+                                <b>Haryanvi Mashup</b>
+                            </h2>
+                            <p>
+                               For every mood, there’s a Haryanvi song! Enjoy a mix of folk, rap.
+                            </p>
+                        </div>
+                        <div data-folder="punjabi" class="card">
+                            <img src="panjabi2.jpg" alt="a.png">
+                            <h2 style="font-family: 'Verdana', 'Geneva', Tahoma, sans-serif;">
+                                <b>Balle Balle Beats</b>
+                            </h2>
+                            <p>
+                               Feel the Punjab da swag!<br>
+                               Pure Punjabi vibes, non-stop hits
+                            </p>
+                        </div>
+                        <div data-folder="viral" class="card">
+                            <img src="viral.jpg" alt="a.png">
+                            <h2 style="font-family: 'Verdana', 'Geneva', Tahoma, sans-serif;">
+                                <b>Top Viral Hits</b>
+                            </h2>
+                            <p>
+                                The hottest tracks taking over your feed and the world !
+                            </p>
+                        </div>
+                        <div data-folder="bollywood" class="card">
+                            <img src="bollywood2.jpg" alt="a.png">
+                            <h2 style="font-family: 'Verdana', 'Geneva', Tahoma, sans-serif;" >
+                                <b>Bollywood Fever</b>
+                            </h2>
+                            <p>
+                               Bollywood magic—timeless hits and fresh chartbusters in one place
+                            </p>
+                        </div>
+                        <div data-folder="newreleased" class="card">
+                            <img src="new.jpg" alt="a.png">
+                            <h2 style="font-family: 'Verdana', 'Geneva', Tahoma, sans-serif;">
+                                <b>New & Now</b>
+                            </h2>
+                            <p>
+                              New music alert—discover today's freshest releases.
+                            </p>
+                        </div>
+                        <div data-folder="devotional" class="card">
+                            <img src="devotional.jpg" alt="a.png">
+                            <h2 style="font-family: 'Verdana', 'Geneva', Tahoma, sans-serif;">
+                                <b>Bhakti Beats</b>
+                            </h2>
+                            <p>
+                              Peaceful vibes and pure devotion—Bhakti tunes for your soul.
+                            </p>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                    <div class="artist">
+                        <h1><b>Artists</b></h1>
+                    </div>
+                    <div class="cardContainer flex">
+
+                        <div data-folder="honeysingh" class="card1">
+                            <div class="round">
+                                <img src="honey.jpg" alt="a.png">
+                            </div>
+                            <h3 style="text-align: center;">
+                                <b>Honey singh</b>
+                            </h3>
+                            <p style="text-align: center;">
+                                Spotify
+                            </p>
+                        </div>
+                        <div data-folder="karan" class="card1">
+                            <div  class="round">
+                                <img src="karan.jpeg" alt="a.png">
+                            </div>
+                            <h3 style="text-align: center;">
+                                <b>Karan Aujla</b>
+                            </h3>
+                            <p style="text-align: center;">
+                                Spotify
+                            </p>
+                        </div>
+                        <div data-folder="diljitspe" class="card1">
+                            <div  class="round">
+                                <img src="diljit.jpeg" alt="a.png">
+                            </div>
+                            <h3 style="text-align: center;">
+                                <b>Diljit dosanjh</b>
+                            </h3>
+                            <p style="text-align: center;">
+                                Spotify
+                            </p>
+                        </div>
+                        <div data-folder="shubh" class="card1">
+                            <div class="round">
+                                <img src="shubh.jpeg" alt="a.png">
+                            </div>
+                            <h3 style="text-align: center;">
+                                <b>shubh</b>
+                            </h3>
+                            <p style="text-align: center;">
+                                Spotify
+                            </p>
+                        </div>
+                        <div data-folder="masoom" class="card1">
+                            <div data-folder="masoom" class="round">
+                                <img src="Masoom.jpg" alt="a.png">
+                            </div>
+                            <h3 style="text-align: center;">
+                                <b>Masoom sharma</b>
+                            </h3>
+                            <p style="text-align: center;">
+                                Spotify
+                            </p>
+                        </div>
+                        <div data-folder="neha" class="card1">
+                            <div class="round">
+                                <img src="neha.jpg" alt="a.png">
+                            </div>
+                            <h3 style="text-align: center;">
+                                <b>Neha Kakkar</b>
+                            </h3>
+                            <p style="text-align: center;">
+                                Spotify
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="playbar ">
+                <div class="seekbar">
+                    <div class="ball">
+
+                    </div>
+                </div>
+                <div class="songbar flex ">
+                    <div class="songtitle">
+                      song name
+                    </div>
+                    <div class="playbuttons flex invert ">
+                        <div id="prev"><svg xmlns="http://www.w3.org/2000/svg" height="39px" viewBox="0 -960 960 960"
+                                width="37px" fill="#1f1f1f">
+                                <path
+                                    d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z" />
+                            </svg>
+                        </div>
+                        <div id="playlogo">
+                            <img src="play.svg" alt=" ">
+                        </div>
+                        <div id="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="39px" viewBox="0 -960 960 960" width="37px"
+                                fill="#1f1f1f">
+                                <path
+                                    d="M383-480 200-664l56-56 240 240-240 240-56-56 183-184Zm264 0L464-664l56-56 240 240-240 240-56-56 183-184Z" />
+                            </svg>
+                        </div>
+                        <div class="volumebar flex">
+                            <img src="volhigh.svg">
+                            <div class="range">
+                                <input type="range" style="height:6px;width:90px" name ="volume" >
+                                
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="songduration">
+                     -- : -- / -- : --
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html> 
